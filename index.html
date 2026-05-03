@@ -599,16 +599,35 @@
         <div class="c-item"><div class="c-icon">⚡</div><div><div class="c-lbl">Focus</div><div class="c-val">Power Systems · EV Charging · Microgrid Research</div></div></div>
       </div>
       <div>
-        <div class="form-row">
-          <div class="form-group"><label class="form-label">Name</label><input type="text" class="form-input" placeholder="Your name"/></div>
-          <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-input" placeholder="your@email.com"/></div>
-        </div>
-        <div class="form-group"><label class="form-label">Subject</label><input type="text" class="form-input" placeholder="Research collaboration / Internship opportunity..."/></div>
-        <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" placeholder="Hi Jahid, I'd love to discuss..."></textarea></div>
-        <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="alert('Thanks for reaching out! Jahid will respond shortly.')">Send Message ⚡</button>
-      </div>
+       <form action="https://formspree.io/f/xvzlzyzj" method="POST">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">Name</label>
+      <input type="text" name="name" class="form-input" placeholder="Your name" required>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Email</label>
+      <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
     </div>
   </div>
+
+  <div class="form-group">
+    <label class="form-label">Subject</label>
+    <input type="text" name="subject" class="form-input" placeholder="Research collaboration / Internship opportunity...">
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-textarea" placeholder="Hi Jahid, I'd love to discuss..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+    Send Message ⚡
+  </button>
+
+</form>
 </section>
 
 <footer>
